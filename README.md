@@ -1,4 +1,4 @@
-# Help Jiuce test Project:
+# Help Juice test Project:
 
 Goal:
 In the project,i built a Notion-like editor, but only the H1 heading component. So it’s not much of an editor, but rather an app that lets you write anywhere and convert your content into H1.
@@ -9,7 +9,7 @@ In the project,i built a Notion-like editor, but only the H1 heading component. 
 
 ## Live Demo
 
-[Help Jiuce live Link](https://jenadiusnicholaus.github.io/helpjuice_test_project/)
+[Help Juice live Link](https://jenadiusnicholaus.github.io/helpjuice_test_project/)
 
 ## Clone the Project
 
