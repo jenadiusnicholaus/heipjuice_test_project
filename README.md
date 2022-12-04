@@ -9,7 +9,7 @@ In the project,i built a Notion-like editor, but only the H1 heading component. 
 
 ## Live Demo
 
-[Help Jiuce live Link]('https://jenadiusnicholaus.github.io/helpjuice_test_project/)
+[Help Jiuce live Link](https://jenadiusnicholaus.github.io/helpjuice_test_project/)
 
 ## Clone the Project
 
@@ -32,7 +32,7 @@ Note: always use the develop branch bacause the main brach is use for deployment
 
 ## Screenshot of the project
 
-<img width="1268" alt="Screen Shot 2022-03-23 at 20 05 47" src="./project_image.png">
+<img width="1268" alt="Screen Shot 2022-03-23 at 20 05 47" src="src/project_image.png">
 
 👤 **Author1**
 
