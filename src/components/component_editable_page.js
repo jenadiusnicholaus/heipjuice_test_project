@@ -1,7 +1,6 @@
 import React from 'react';
 import { setCaretToEnd } from '../utilities/utils.js';
 import ComponentEditableBlock from './component_editable_block.js';
-import { blockUniqueId } from '../utilities/utils.js';
 import '../styles/editable_page_style.css'
 import initialBlock from '../utilities/initialBlock.js'
 

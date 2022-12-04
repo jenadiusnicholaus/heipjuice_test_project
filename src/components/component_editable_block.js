@@ -1,3 +1,5 @@
+// eslint-disable-next-line
+
 import React from 'react';
 import ContentEditable from "react-contenteditable";
 import '../styles/editable_block_style.css'
@@ -21,19 +23,17 @@ class ComponentEditableBlock extends React.Component {
         y: null
       }
     };
-
   }
 
 componentDidMount = () => {
     this.setState({ html: this.props.html, tag: this.props.tag });
   }
-    
- onContentEdibleChange = (e) => {
+onContentEdibleChange = (e) => {
     this.setState({ html: e.target.value });
     console.log(e.target.value)
   }
 
-  componentDidUpdate = (prevProps, prevState) => {
+componentDidUpdate = (prevProps, prevState) => {
     const htmlChanged = prevState.html !== this.state.html;
     const tagChanged = prevState.tag !== this.state.tag;
     if (htmlChanged || tagChanged) {
@@ -77,7 +77,7 @@ onKeyUpHandler = (e)=> {
     }
   }
 
-  openBlocType = () => {
+openBlocType = () => {
     const { x, y } = determinCaretPossion();
     this.setState({
       selectMenuIsOpen: true,
@@ -95,14 +95,14 @@ onKeyUpHandler = (e)=> {
     document.removeEventListener("click", this.closeBlockTypeSheet);
   }
 
-  blockTagSelectionHandler =(tag)=> {
+blockTagSelectionHandler =(tag)=> {
     this.setState({ tag: tag, html: this.state.htmlBackup }, () => {
       setCaretToEnd(this.contentEditable.current);
       this.closeBlockTypeSheet();
     });
   }
 
-  render() {
+render() {
       return (
         <>
         {this.state.selectMenuIsOpen && (
