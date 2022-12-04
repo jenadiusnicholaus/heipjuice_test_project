@@ -27,7 +27,7 @@ To get a local copy of the project, running follow these simple example steps.
 ```
 
 ```
-Note: always use the develop branch bacause the main brach is use for deployment, so some files are hidden in producttion.
+Note: always use the develop branch bacause the main brach is used for deployment, so some files are hidden in producttion.
 ```
 
 ## Screenshot of the project
