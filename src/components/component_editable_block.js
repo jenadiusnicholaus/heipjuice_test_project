@@ -27,10 +27,10 @@ class ComponentEditableBlock extends React.Component {
 
 componentDidMount = () => {
     this.setState({ html: this.props.html, tag: this.props.tag });
-  }
+}
+  
 onContentEdibleChange = (e) => {
     this.setState({ html: e.target.value });
-    console.log(e.target.value)
   }
 
 componentDidUpdate = (prevProps, prevState) => {
@@ -70,13 +70,14 @@ onKeyDownHandler = (e) => {
     this.setState({ previousKey: e.key });
 }
   
-//=============== select menu =============
+// Enable the user to be able to diplay all possible block tag filters  
 onKeyUpHandler = (e)=> {
     if (e.key === "/") {
       this.openBlocType();
     }
   }
 
+// Show the Block type Sheet  for the user to selet the block tag
 openBlocType = () => {
     const { x, y } = determinCaretPossion();
     this.setState({
@@ -86,6 +87,7 @@ openBlocType = () => {
     document.addEventListener("click", this.closeBlockTypeSheet);
   }
 
+  // on close  this event, for eg when auser taps aside the Sheet it should disapear
   closeBlockTypeSheet =() =>{
     this.setState({
       htmlBackup: null,
@@ -95,9 +97,12 @@ openBlocType = () => {
     document.removeEventListener("click", this.closeBlockTypeSheet);
   }
 
+  // When the Block Tag Sheep  is open the is an opotunity for the user to select the Tap 
+
 blockTagSelectionHandler =(tag)=> {
     this.setState({ tag: tag, html: this.state.htmlBackup }, () => {
       setCaretToEnd(this.contentEditable.current);
+      //then we need to close the Block Tag Type it again 
       this.closeBlockTypeSheet();
     });
   }

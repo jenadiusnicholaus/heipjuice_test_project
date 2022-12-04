@@ -26,6 +26,7 @@ class ComponentEditablePage extends React.Component {
   }
 
   addBlock = (currentBlock) => {
+    // 1: get  and update initial Block Data
     const newBlock = initialBlock
     const blocks = this.state.blocks;
     const index = blocks.map((b) => b.id).indexOf(currentBlock.id);
@@ -36,7 +37,9 @@ class ComponentEditablePage extends React.Component {
     });
   }
 
-  deleteBlock = (currentBlock)=> {
+  deleteBlock = (currentBlock) => {
+    // 1: get  and update initial Block Data
+
     const previousBlock = currentBlock.ref.previousElementSibling;
     if (previousBlock) {
       const blocks = this.state.blocks;
