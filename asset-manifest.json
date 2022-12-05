@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/notion_clone/static/css/main.aa3397d0.css",
-    "main.js": "/notion_clone/static/js/main.3573827e.js",
-    "static/js/787.b57b9135.chunk.js": "/notion_clone/static/js/787.b57b9135.chunk.js",
-    "index.html": "/notion_clone/index.html",
-    "main.aa3397d0.css.map": "/notion_clone/static/css/main.aa3397d0.css.map",
-    "main.3573827e.js.map": "/notion_clone/static/js/main.3573827e.js.map",
-    "787.b57b9135.chunk.js.map": "/notion_clone/static/js/787.b57b9135.chunk.js.map"
+    "main.css": "/notion-clone/static/css/main.aa3397d0.css",
+    "main.js": "/notion-clone/static/js/main.e8b8d417.js",
+    "static/js/787.b57b9135.chunk.js": "/notion-clone/static/js/787.b57b9135.chunk.js",
+    "index.html": "/notion-clone/index.html",
+    "main.aa3397d0.css.map": "/notion-clone/static/css/main.aa3397d0.css.map",
+    "main.e8b8d417.js.map": "/notion-clone/static/js/main.e8b8d417.js.map",
+    "787.b57b9135.chunk.js.map": "/notion-clone/static/js/787.b57b9135.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aa3397d0.css",
-    "static/js/main.3573827e.js"
+    "static/js/main.e8b8d417.js"
   ]
 }
